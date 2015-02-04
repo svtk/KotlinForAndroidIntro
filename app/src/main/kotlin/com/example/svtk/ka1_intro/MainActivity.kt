@@ -13,10 +13,19 @@ public class MainActivity : ActionBarActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val button = findViewById(R.id.click_me_button) as Button
+        val clickMeButton = findViewById(R.id.click_me_button) as Button
+        val andMeButton = findViewById(R.id.and_me_button) as Button
 
-        button.setOnClickListener {
+        clickMeButton.setOnClickListener {
             Toast.makeText(this, "Thank you!", Toast.LENGTH_SHORT).show()
+        }
+
+        andMeButton.showToastOnClick()
+    }
+
+    fun Button.showToastOnClick(text: String = "Thank you!") {
+        this.setOnClickListener {
+            Toast.makeText(this@MainActivity, text, Toast.LENGTH_SHORT).show()
         }
     }
 }
