@@ -2,6 +2,7 @@
 <resources>
 
     <string name="app_name">KA1_Intro</string>
+    <string name="hello_mce">Hello MCE!</string>
     <string name="click_me">Click me!</string>
 
 </resources>
