@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">KA1_Intro</string>
+    <string name="app_name">Buttons</string>
     <string name="hello_mce">Hello MCE!</string>
     <string name="click_me">Click me!</string>
     <string name="and_me">And me!</string>
