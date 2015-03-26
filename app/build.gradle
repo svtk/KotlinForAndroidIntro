@@ -29,12 +29,17 @@ dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 }
 buildscript {
-    ext.kotlin_version = '0.10.195'
+    ext.kotlin_version = '0.11.91'
     repositories {
         mavenCentral()
     }
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+buildscript {
+    dependencies {
+        classpath 'org.jetbrains.kotlin:kotlin-android-extensions:0.11.91'
     }
 }
 repositories {

@@ -23,6 +23,6 @@ fun testLambdas() {
 
     list.filter { it > 0 }
 
-    list.map { "" }
+    list.map { "$it" }
 }
 

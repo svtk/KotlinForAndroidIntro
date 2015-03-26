@@ -5,6 +5,7 @@ import android.support.v7.app.ActionBarActivity
 import android.view.View
 import android.widget.Button
 import android.widget.Toast
+import kotlinx.android.synthetic.activity_main.*
 
 
 public class MainActivity : ActionBarActivity() {
