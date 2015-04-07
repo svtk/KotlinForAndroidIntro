@@ -3,7 +3,7 @@ package com.example.svtk.ka1_intro
 
 fun testLambdas() {
 
-    val sum: (Int, Int) -> Int = { (x: Int, y: Int) -> x + y }
+    val sum: (Int, Int) -> Int = { x: Int, y: Int -> x + y }
 
     sum(1, 2) == 3 //true
 
