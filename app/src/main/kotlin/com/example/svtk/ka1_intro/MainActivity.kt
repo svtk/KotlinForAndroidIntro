@@ -1,14 +1,13 @@
 package com.example.svtk.ka1_intro
 
+import android.app.Activity
 import android.os.Bundle
-import android.support.v7.app.ActionBarActivity
-import android.view.View
 import android.widget.Button
 import android.widget.Toast
 import kotlinx.android.synthetic.activity_main.*
 
 
-public class MainActivity : ActionBarActivity() {
+public class MainActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
