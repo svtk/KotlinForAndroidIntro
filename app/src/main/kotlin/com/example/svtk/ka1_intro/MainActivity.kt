@@ -9,6 +9,8 @@ import org.jetbrains.anko.intentFor
 import org.jetbrains.anko.singleTop
 import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.toast
+import kotlinx.android.synthetic.activity_main.click_me_button
+import kotlinx.android.synthetic.activity_main.and_me_button
 
 
 public class MainActivity : Activity() {
@@ -18,7 +20,6 @@ public class MainActivity : Activity() {
         setContentView(R.layout.activity_main)
 
         val clickMeButton = findViewById(R.id.click_me_button) as Button
-        val andMeButton = findViewById(R.id.and_me_button) as Button
 
         clickMeButton.setOnClickListener {
             Toast.makeText(this, "Thank you!", Toast.LENGTH_SHORT).show()
@@ -26,14 +27,15 @@ public class MainActivity : Activity() {
 //            toast("Thank you!")
         }
 
-        andMeButton.setOnClickListener {
+        and_me_button.setOnClickListener {
             val intent = Intent(this, javaClass<NewActivity>())
             intent.putExtra("ANSWER", 42)
             intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP)
             startActivity(intent)
 
-//            startActivity(intentFor<NewActivity>("ANSWER" to 42).singleTop())
-//            startActivity<NewActivity>("ANSWER" to 42)
         }
     }
 }
+
+//            startActivity(intentFor<NewActivity>("ANSWER" to 42).singleTop())
+//            startActivity<NewActivity>("ANSWER" to 42)
