@@ -15,6 +15,6 @@ fun testNullability() {
 
     s2!! //throws NPE if s2 is null
 
-    if (s2 == null) return
+    if (s2 == null) fail()
     s2.length()
 }
